@@ -1,0 +1,145 @@
+<!doctype html>
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="visualdesignFinalProject.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Voltaire' rel='stylesheet' type='text/css'>
+<title>Visual-Design
+</title>
+
+</head>
+<body>
+ <script src="https://code.jquery.com/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+
+<data-spy="scroll" data-target=".navbar" data-offset="0">
+
+<div id="header" class=" smallimg container-fluid img-responsive" ><!--<style="background-image:url(designejurneybig.jpg)  ;background-repeat:no-repeat;color:#333;height:500px;">-->
+ <div  id="heading" class="container ">Visual Design Journey <h3>Walk Through the process of Designing.</h3>
+ 
+</div>
+ </div><!--=======heading container end================= -->
+
+  
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="482">
+	<div class="container-fluid">
+ 	<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Menu</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <!-- <div> --><div class="container">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav "> 
+          <li class="active"><a data-toggle="collapse" data-target=".navbar-collapse" href="#section1">Goal</a></li>
+          <li><a href="userprofile.html">User Profile</a></li>
+          <li><a href="sitemapandmockup.html">Site map and Mockup</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Design Explorations<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="designexploration.html">Major Changes</a></li>
+              <li><a href="#section42">Final Design</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div><!--=========nav container end=======-->
+  </div>
+</nav>    
+
+
+<div id="section1" class="container-fluid">
+	
+ <div class="container" >
+         <div class="row">
+        <div class="col-sm-6 col-md-8"> 
+        	<h1>Image</h1><br>
+        	<img class="img-responsive img" src="welcome.PNG" alt="beach" width="600" > </div>
+             <div id="critis" class="col-sm-6 col-md-4">  
+  <p><span style="font-size:2.2em">.</span> Image quality is not good.</p><p><span style="font-size:2.2em">.</span>Navigation bar is not consistent throughout the 
+  site.</p>
+  <p><span style="font-size:2.2em">.</span>No Typographic Hierarchy, no margin, bad color combination .</p><p><span style="font-size:2.2em">.</span>In Short bad UX and UI. </p>
+</div>
+
+        </div><!--row end-->
+
+ 
+          <h1>Header</h1><br>
+        	<img class="img-responsive img"  src="header.PNG" alt="header img" width="900"> 
+            
+            <h1>content</h1><br>
+        	<img class="img-responsive img"  src="containt.PNG" alt="beach"width="900">
+<!-- </div> -->
+ </div><!--==sec-1 container end===   -->
+</div><!--==sec-1 fluid-container end===-->
+
+<!-- <div id="section2" class="container-fluid"> -->
+ 
+<!-- </div> -->
+<!-- <div id="section3" class="container-fluid"> -->
+ 
+<!-- </div> -->
+<!-- <div id="section41" class="container-fluid"> -->
+  
+<!-- </div> -->
+<!-- <div id="section42" class="container-fluid"> -->
+ 
+<!-- </div> -->
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

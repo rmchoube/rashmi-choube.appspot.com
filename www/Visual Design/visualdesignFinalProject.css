@@ -1,0 +1,83 @@
+ body {
+      position: relative; 
+  }
+.affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;border-radius: 0;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 5px;
+  }
+
+  .img{margin-bottom: 30px;}
+  #section1 {padding-top:200px;height:auto;color: #333; background-color: #fff;}
+  #section2 {padding-top:50px;height:auto;color: #fff; background-color: #666;margin:0 auto;}
+  #section3 {padding-top:50px;height:auto;color: #fff; background-color: #666;}
+  #section41 {padding-top:50px;height:auto;color: #fff; background-color: #666;}
+  #section42 {padding-top:50px;height:auto;color: #fff; background-color: #444;}
+  
+
+.container{margin: 0 auto;}
+ @media screen and (min-width:679px){#heading{margin-left: 100px ;
+  margin-top: 200px;
+  font-size: 4em;
+  font-family:'Kaushan Script',cursive;  }
+  h3{margin:0 auto;margin-top: 5px; }
+}
+  #critis{margin-top: 100px;}
+  #header{background-image: url(VDJOURNEYEXTRALARGE.jpg) ;
+    background-repeat:no-repeat;width: 100%;height: 500px;}
+    a ,h1 ,p{font-family: Voltaire;font-size: 1.8em;}
+ .imgsitemockup{/*margin-left:120px ;*/margin-bottom: 50px;margin: 0 auto;}
+h1{margin-left: 20px;}
+
+p{line-height: 1.3em;}
+ .navbar-inverse .navbar-nav > .active{
+    color: #000;
+   background: #6ce;
+ }
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #333;
+    background-color: #fc6;
+}
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+   color: #333;
+    background-color: #fc6;
+}
+
+@media screen and (max-width:680px){
+                                    #header{background-image: url(VDJOURNEYsmall.jpg) ;
+                                     background-repeat:no-repeat;
+                                     width:100%;
+                                     height: 300px}
+                                   }
+@media screen and (max-width:680px){
+                                     #heading{
+                                              margin-top: 50px;
+                                              font-size: 2.3em;
+                                              font-family:'Kaushan Script',cursive; 
+                                               };
+                                      h3{margin:0 auto;margin-top: 5px;font-size: 0.2em; }
+
+                                           }
+                                            #section1 {padding-top:150px;}
+                                            .navbar{border:0;}
+                                           
+                                     }
+ 
+
+
+
+
+
+

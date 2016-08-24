@@ -1,0 +1,17 @@
+.parallax-container {
+      height: "70px";
+    }
+
+
+   .modal.bottom-sheet{max-height:65% !important;}
+
+/*.slider.slides{height:700px;}*/
+.carousel .carousel-item img{width:150%;}
+
+
+
+.carousel.carousel-item{position :relative;}
+h2, h4, h5{color:#ef5350 ;}
+.nav-wrapper .brand-logo{padding-left: 100px;}
+.nav-wrapper ul {padding-right: 50px;}
+.side-nav li a:hover{background-color:#26a69a;}

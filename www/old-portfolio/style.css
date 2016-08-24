@@ -1,0 +1,325 @@
+/*-----name heading------*/
+#heading{font-family: 'Rancho',cursive;
+		font-size: 6em;
+		font-weight: 400;
+		margin-bottom: 0;
+	    color:#45a89c; }
+
+/*---intro,skill,work in container---*/
+.container h1{font-family:'Roboto Condensed',sans-serif;   
+			 font-size: 2.5em;
+			 font-weight: 300;
+			 color:#1d2f38;}
+
+/*------all circle links are h2------*/
+h2{ font-family:'Roboto Condensed',sans-serif;
+	font-size: 3em;
+	margin-top: 5px;}
+
+/*-heading of my art--*/
+	#myart h1{color: #fff;
+	font-family:'Roboto Condensed',sans-serif;
+			 font-size: 2.5em;
+			 font-weight: 300;}
+
+.col-lg-4{padding-left: 110px;}
+
+.page-header{color:#45a89c;border-bottom: 0;}
+
+.page-header hr{width: 700px;
+				margin-top: 0;
+				padding-top: 0;
+				margin-bottom: 0;
+				top:5px;
+				}
+.jumbotron{background-color:#1d2f38;
+			color:#45a89c;
+			text-align: center;
+			font-family:'Roboto Condensed',sans-serif;
+			}
+.intro{background-color:#45a89c;
+		color:#fff;
+		height:400px;
+	    margin-bottom: 0;
+	 }
+.skill{background-color:#f15e3d;
+		/*height:700px;*/
+		color: #fff;
+		margin-bottom: 0;
+		font-family:'Roboto Condensed',sans-serif;
+		 	
+	}
+
+.art{background-color: #1d2f38;
+		color:#fff; }
+
+.row{margin-top: 80px;
+	margin-bottom: 100px;}
+
+.skill a{color:#1d2f38; }
+
+.skill a:hover{color:#45a89c;
+				text-shadow: 2px 2px 1px #666;
+				font-family:'Roboto Condensed',sans-serif;
+				font-size: 1.3em;
+			  }
+
+.img-responsive{box-shadow: 2px 2px 4pc #000;}
+
+.col-lg-3:hover {transform:scale(1.5);}
+
+h3{padding-top: 50px;
+   font-family:'Roboto Condensed',sans-serif;
+   font-size: 2em;
+   font-weight: 300;
+   }
+
+.img-circle{border:15px ;
+			border-color: transparent;
+			float: left;
+			right: -10px;
+	 
+			}
+
+a{color:#fff;}/*====circle image link ====*/
+a:hover {color: #45a89c;
+		text-shadow:1px 1px 1px #888;
+		text-decoration: none;font-family:'Roboto Condensed',sans-serif;
+		font-size: 1.1em;}
+
+.glyphicon{font-size:0.6em;}
+
+.glyphicon-link{font-size:0.4em;}
+
+/*---------heading slid in effect--------*/
+.slide-up{height: 210px;
+overflow: hidden;}
+.slide-up h1{animation:1s slide-up;
+margin-top: 0%;}
+@keyframes slide-up{
+	from{margin-top: 50%;
+		height: 50%;}
+		to{margin-top: 0%;
+			height: 100%;}
+}
+
+
+
+/*===========circle image hover effect==============*/
+ .hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+hr{width:200px;position:relative;top:20px;display: inline-block;}
+
+.hovereffect .overlay{
+width:180px;
+height:180px;
+position:absolute;
+overflow:hidden; 
+top:20px;
+left:10px;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+border-radius: 50%;
+
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+/*this is below experiment of overlay 1   work images effect*/
+.hovereffect1 {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+.hovereffect1 .overlay1{
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden; 
+top:0px;
+left:0px;
+opacity:0;
+background-color:rgba(0,0,0,0.7);
+border-radius: 0;
+
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect1:hover .overlay1 {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.overlay1 a{color:#fff;text-align:center;vertical-align: middle;line-height: 190px;/*position: absolute;top:100px;*/}
+.overlay1 a:hover {color: #fff;
+		text-shadow:1px 1px 1px #888;
+		text-decoration: none;font-family:'Roboto Condensed',sans-serif;
+		font-size: 1.1em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================================*/
+
+.hovereffect img {
+/*display:block;*/
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+width: 180px;
+height:180px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.hovereffect h2 {font-family:'Roboto Condensed',sans-serif;
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+position:relative;
+top:50px;
+font-size:17px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatex(-200px);
+-ms-transform:translatex(-200px);
+transform:translatex(-200px);
+-webkit-transition:all .5s ease-out;
+transition:all .5s ease-out;
+padding:10px;
+overflow: hidden;
+
+}
+
+/*.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transform:translatex(200px);
+-ms-transform:translatex(200px);
+transform:translatex(200px);
+-webkit-transition:all .5s ease-out;
+transition:all .5s ease-out;
+margin:50px 0 0;
+padding:7px 14px;
+}*/
+
+
+.hovereffect  hr{
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out}
+.hovereffect hr {filter:alpha(opacity=0);
+-webkit-transform:translatex(200px);
+-ms-transform:translatex(200px);
+transform:translatex(200px);
+-webkit-transition:all .5s ease-out;
+transition:all .5s ease-out;}
+
+
+
+/*.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}*/
+
+.hovereffect:hover img {
+-ms-transform:scale(1.06);
+-webkit-transform:scale(1.06);
+transform:scale(1.06);
+}
+
+/*this(below) is for work images hover effect*/
+
+.hovereffect1:hover img {
+-ms-transform:scale(1.06);
+-webkit-transform:scale(1.06);
+transform:scale(1.06);
+}
+
+
+
+
+/*================================================*/
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+overflow: hidden;
+}
+
+.hovereffect:hover h2/*,.hovereffect:hover a.info*/ {
+	opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0px);
+-webkit-transform:translatey(0px);
+transform:translatey(0px);
+
+border-radius: 12px 10px 0px 0px;
+}
+
+/*.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}*/
+
+
+
+.hovereffect:hover hr{
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0px);
+-webkit-transform:translatey(0px);
+transform:translatey(0px);
+}
+.hovereffect:hover hr {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+
+
+
+
+
+/*======heading frontend designer fading effect====*/
+
+@-webkit-keyframes fadeIn{from{opacity: 0;}
+                   to {opacity: 1;}}
+@-moz-keyframes fadeIn{from{opacity: 0;}
+                   to {opacity: 1;}}
+@keyframes fadeIn{from{opacity: 0;}
+                   to {opacity: 1;}}
+
+.fade-in{opacity: 0;
+-webkit-animation:fadeIn ease-in 1;
+-moz-animation:fadeIn ease-in 1;
+animation:fadeIn ease-in 1;
+/*-webkit-animation-delay: 1s;*/
+-webkit-animation-fill-mode:forwards;
+-webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+}

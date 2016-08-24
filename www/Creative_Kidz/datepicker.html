@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     
+
+      <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/> 
+     <link href="Project.css" type="text/css" rel="stylesheet"/> 
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <style>
+      #map{height:400px;width:600px;margin:0 auto;margin-top: 100px;}
+}
+      </style>
+   
+    </head>
+<body>
+<div class="navbar-fixed">
+      <nav>
+    <div class="nav-wrapper">
+   
+      <a href="#" class="brand-logo">Creative Kidz</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+      <!-- <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
+        <li><a href="Project.html">Home</a></li>
+        <li><a href="#activites">Activities</a></li>
+        <li><a href="#">Class Schudel</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="Project.html">Home</a></li>
+        <li><a href="#activites">Activities</a></li>
+        <li><a href="#">Class Schudel</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      </div>
+     
+  </nav>
+ </div>
+<div class="row" style="padding-top:50px;">
+
+   
+    <form class="col s5">
+    <div style="padding-bottom:20px;"><h5 class="center-align">Contact Us</h5></div>
+      <div class="row">
+
+        <div class="input-field col s12 m6">
+        <i class="material-icons prefix">account_circle</i>
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="wrong">Email</label>
+        </div>
+      </div>
+      
+  <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="contact" type="tel" class="validate">
+          <label for="contact" data-error="wrong">Contact number</label>
+        </div>
+      </div>
+     
+     
+  
+
+   <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Message</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </form>
+  
+<!-- ================================================ -->
+       <div class="col s1 center-align">
+<hr style="height:200px;width:1px">OR<hr style="height:200px;width:1px"> 
+     </div> 
+<!-- ======================================================== -->
+
+<div class="col s12 m6">
+   <div style="padding-bottom:20px;"><h5 class="center-align">Enrollment Form</h5></div>
+      <div class="row">
+ <div class="input-field col s12 m6">
+        <i class="material-icons prefix">account_circle</i>
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Student First Name</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="wrong" data-success="right">Email</label>
+        </div>
+      </div>
+      
+  <div class="row">
+        <div class="input-field col s12 m6">
+          <input type="date" class="datepicker">
+          <label for="date" data-error="wrong" data-success="right">Birthdate</label>
+        </div>
+      </div>
+     
+     
+  <div class="row">
+  <div class="input-field col s12 m6">
+    <select multiple>
+      <option value="" disabled selected>Choose Art Classes</option>
+      <option value="1">Clay Art</option>
+      <option value="2">Greeting Cards</option>
+      <option value="3">Paper Quilling</option>
+      <option value="3">Canvas Painting</option>
+    </select>
+    <label>Art Classes</label>
+  </div>
+  </div>
+<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+</div>
+
+
+
+     </div>
+
+        
+
+<div id="map"></div>
+ <script> function initMap() {
+  var Creative_Kids = {lat: 37.368832, lng: -122.0336346};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center:Creative_Kids
+  });
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h4 id="firstHeading" class="firstHeading">Creative Kidz</h4>'+
+      '<div id="bodyContent">'+
+      '<p>633 East Evelen Avenue'+
+      'Sunnyvale. CA 94067</p>'+
+      '<p>open till 6pm.</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+    position: Creative_Kids,
+    map: map,
+    title: 'Creative_Kids'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+}
+    </script>
+
+  <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8tSU5V2hgCGE9LbyrAvB3KmvwA9Sp1ec&callback=initMap"></script> 
+
+
+     <!-- ======================================================= -->     
+     <!-- tmh script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+      <script type="text/javascript" src="../js/materialize.min.js"></script-->
+   <!-- Compiled and minified CSS -->
+  <!-- tmh tested with the current cdn just in case, still getting network error --> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        
+     
+   
+
+    <!-- tmh wrong kind of comment outside script src="js/init.js"></script-->
+   <!--   <script>  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+      
+  </script> -->
+<!-- <script src="Project.js"></script>  -->
+<script>
+         $(document).ready(function(){
+    $('select').material_select();
+  });
+         $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+      </script>
+    </body>
+  </html>

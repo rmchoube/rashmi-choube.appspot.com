@@ -1,0 +1,174 @@
+
+body{margin:0px;padding:0px;}
+
+.row{width: 100%;
+margin: 0 auto;padding-top: 50px;
+}
+.box{display:inline-block;
+     width: 25%;
+     margin: 0;
+    padding: 0;
+min-height: 15em;
+text-align: center; transition: all 0.3s ease-in-out;
+/* line-height: 15em; */
+}
+
+
+/*.two{float: right}
+.three{clear:right;}
+.four{float: right}
+.one1{clear: right;}*/
+@media only screen and (max-width: 48em){
+  .row {display: table;width: 100%;}
+  .box{display: block;width: 100%;}
+  .one, .one1{display: table-caption;}
+  .two, .three{display: table-header-group;}
+  .four{display: table-footer-group;} 
+}
+
+.materialboxed img{max-width:90%;z-index: 1;position:relative;
+                   margin:4%;border: 2px solid transparent;
+                   transition: all 0.5s ease-in-out;
+                    transform: scale3d(1, 1, 1);}
+
+
+/*.box img { box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);}*/
+.zoom img:hover{transition: box-shadow .25s ease-in-out;z-index: 100;position:relative;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border: 2px solid #bdbdbd;transition: all 0.5s ease-in-out;  transform: scale3d(1.5, 1.5, 1);
+ }
+
+.js-reveal {
+  opacity: 1;
+  transition: opacity .7s ease-in, margin-top .7s ease-out;
+}
+
+.js-reveal--hidden {
+  opacity: 0;
+  margin-top: 3em;
+}
+ 
+/*section.module.parallax-2 {height:600px;}*/
+
+
+
+
+
+  p{margin:0 auto;
+    text-align:center;
+    padding:40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:1.4em;
+    letter-spacing: 0em}
+h4{font-family: "Roboto";font-weight: 500;color: #555;}
+
+.circle-img{border-radius: 5px 20px 5px;height: 120px;width: 120px;position: relative;
+  left:-170px;top:-40px;box-shadow: 0 0 15px #000;}
+
+
+  .skill{font-weight: 500;}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {text-align: center;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 300;
+}
+section.module p { font-family: "Roboto";color: #333;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {text-align: center;
+ padding: 240px 0;
+}/*padding-top: 200px;padding-bottom: 250px;*/
+
+section.module.parallax h2{ color: #ececec;
+                            font-weight: 200;
+                            text-transform: uppercase;
+                            line-height:1.5em;
+                            word-spacing: 0.1em;}
+ 
+
+
+section.module.parallax-1 {
+  background-image: url("../img/demo/backgrcol3.jpg"); /*background-repeat: no-repeat;*/
+}
+section.module.parallax-2 { 
+  background-image: url("../img/demo/htmlcoding2.jpg");
+
+}/**/
+section.module.parallax-3 {
+  background-image: url("../img/demo/hobbie_sect.jpg");
+}
+
+/*==================for mobile=========================*/
+@media all and (max-width: 599px) {section.module.parallax h3{
+   font-family: "Roboto";color: #ef5350;
+    font-size: 0.9em;letter-spacing: 0.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.5em;
+   /* position: absolute;
+    top:70;*/
+  }
+  .circle-img{border-radius: 5px 20px 5px;height: 120px;width: 120px;position: relative;
+  left:0px;top:-40px;box-shadow: 0 0 15px #000;}
+  
+section.module.parallax{text-align: center;padding-top: 100px;padding-bottom: 100px;}
+
+}
+  /*=================================================*/
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+ 
+  section.module.parallax h3{
+   font-family: "Roboto";color: #ef5350;
+    font-size: 1.3em;letter-spacing: 0.9em;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.5em;
+   /* position: absolute;
+    top:70;*/
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h3 {color: #ef5350;
+    font-size: 1.3em;letter-spacing: 0.9em;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.5em;
+ /*position: absolute;
+    top:70;*/
+  }
+ #artwork{display:flex;justify-content: flex-start; }
+}
+
+.four4{width: 100%;}
+.one1, .two2,.three3{box-shadow:0px 0px 4px #444;}
+@media all and (min-width: 960px) {.three3{width:50%;}}
+
+
+footer,h5{background-color:#333 ;
+          font-size: 1em;
+          padding-top:15px ;padding-bottom: 15px;
+          text-align: center;
+          color: #ffffff;
+          font-family: "Roboto";font-weight: 300;}
+.copyright h5{font-size: 0.9em;color:#999;}

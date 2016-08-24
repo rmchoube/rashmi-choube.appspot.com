@@ -1,0 +1,26 @@
+#logo-container{padding-left: 60px;}
+nav .nav-wrapper{height: 150px;background-color:#42a5f5;}
+
+ul li a{    text-transform: capitalize;border-bottom: 3px solid transparent;}
+a{padding-bottom: 5px;}
+nav ul { margin-top:70px;}
+ul li a:hover{background-color: transparent;
+	         border-bottom: 2px solid #1A83DF;
+	        }
+ ul.right.hide-on-med-and-down{line-height: 34px;}
+.cantaint{margin-top:100px;}
+#aside> ul li {padding-bottom: 30px;padding-top: 30px;padding-left: 40px;}
+/*@media only screen (min-width: 993px){.container {
+    width: 80%;}}*/
+ /* .LFT{margin-left:35px; }
+    .RIT{margin-right:35px;}*/
+h5, p{color:#666;}
+.info{margin-top: 100px;}
+h4{margin-bottom:100px;color: #666;}
+
+h3{padding-bottom: 50px;color:#1A83DF;}
+.side-nav li a{background-color: transparent;}
+
+.waves-effect{z-index: 0;}
+.waves-effect .waves-ripple {background-color: rgba(249,249,249,0.65);}
+footer{background-color:#333;color:#999;height: 50px;text-align: center;padding-top: 5px}
